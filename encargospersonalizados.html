@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>blancopiedra/encargospersonalizados</title>
+        <meta name="description" content="Encargos personalizados en vajilla y objetos de cerámica.">
+        <meta name="keywords" content="cerámica, a pedido, encargos, alfarería, pottery, vajilla, deco, tazas, vasos, mates, bowls, platos, bandejas, macetas, floreros">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/pruebacss.css">
+    </head>
+
+<body>
+
+<!--inicio de header y menu-->
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <nav class="navbar navbar-light colorGris justify-content-between navbar-expand-lg">
+
+                <a href="index.html" class="logo"><img src="media/logo.svg" alt="logo" class="navbar-brand justify-content-start"/></a>
+    
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+    
+                        <div class="navbar-nav text-center">
+
+                            <a class= "nav-item nav-link" href="sobreblancopiedra.html">Sobre BP</a>
+                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Productos
+                                </a>
+                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="tienda.html">Tienda</a>
+                                  <a class="dropdown-item" href="productos.html">Diseños</a>  
+                                  <a class="dropdown-item" href="precios.html">Precios</a>
+                                </div>
+                            </li>   
+                            
+                            <a class= "nav-item nav-link" href="encargospersonalizados.html">Encargos</a>
+
+                            <a class= "nav-item nav-link" href="contacto.html">Contacto</a>
+
+                        </div>
+
+                    </div>           
+            </nav>          
+        </header> 
+    </div>
+</div>
+<!--fin de header y menu-->
+
+<!--inicio de pagina encargos-->
+<section class="container-fluid">
+
+    <div class="row justify-content-center section1">
+
+        <h1>ENCARGOS PERSONALIZADOS</h1>
+
+    </div>    
+
+    <div class="row justify-content-center">
+
+        <h4 class="sobreBP1">Te gustaría tener un set de vajilla que sea <em>único? </em></h4>
+
+    </div>
+
+    <div class="row justify-content-center">
+
+        <h4 class="sobreBP1">Querés hacer un regalo <em>personalizado?</em></h4>
+
+    </div>
+    
+    <div class="row justify-content-center">
+
+        <h4 class="sobreBP1">Estás buscando un objeto decorativo <em>original?</em></h4>
+
+    </div>
+
+    <!--inicio de formulario para encargos-->
+    <div class="row justify-content-center">
+
+        <div class="col-xs col-sm col-md-10 col-lg col-xl">
+
+            <div class="encargo__formulario sobreBP1">
+
+                <form  action="#" methop="get" enctype="multipart/form-data">
+                <div class="form-group">   
+                <fieldset>
+
+                    <legend class="formulario__legend">Hacé tu pedido:</legend>
+
+                    <div class="encargo__pedido"> 
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control"/>
+                    </div>
+                    
+                    <div class="encargo__pedido"> 
+                    <label for="email">Emai</label>
+                    <input type="email" id="email" name="email" class="form-control"/>
+                    </div>
+
+                    <div class="formulario__item"> 
+                    <label for="tipo de pieza">Qué tipo de pieza buscás?</label>
+                    <select id="tipo de pieza" name="tipo de pieza">
+                    <option value="vajilla">vajilla</option>
+                    <option value="deco">deco</option>
+                    <option value="otro">otro</option>
+                    </select>
+                    </div>
+
+                    <div class="formulario__item"> 
+                    <label for="colores">De qué colores te gustaría?</label>
+                    </div>
+                    <input type="radio" name="colores" id="pasteles" value="pasteles"/>Pasteles
+                    <input type="radio" name="colores" id="azul" value="azul"/>Azul
+                    <input type="radio" name="colores" id="blanco" value="blanco"/>Blanco
+                    <input type="radio" name="colores" id="otros" value="otros"/>Otros
+                    
+
+                    <div class="formulario__item"> 
+                    <label for="particularidad">Qué particularidad debe tener la pieza?</label>
+                    </div>
+                    <input type="checkbox" name="particularidad" id="apto vajilla" value="apto vajilla"/>Apto Vajilla
+                    <input type="checkbox" name="particularidad" id="apto microondas" value="apto microondas"/>Apto Microondas
+                    
+                    
+                    <div class="formulario__item"> 
+                    <p class="formulario__detalles">Contame más detalles...</p>
+                    </div>   
+
+                    <textarea class="form-control"></textarea>
+
+                </fieldset>
+                    <input type="reset" value="Vaciar datos" class="botonesFormulario btn btn-dark"/>
+                    <input type="submit" value="Enviar consulta" class="botonesFormulario btn btn-dark"/>
+                </div>
+                </form>
+
+            </div>
+        
+        </div>
+
+    </div>
+    <!--fin de formulario para encargos-->
+
+    <div class="container">
+
+        <div class="row justify-content-center sobreBP1">
+
+            <h2>Recomendación de paletas cromáticas para esmaltes cerámicos:</h2>
+            
+                <p class="sobreBP1">Si hay algo que define el carácter de una pieza cerámica es su color.
+                Y a la hora de personalizar un set de vajilla o un objeto decorativo, más allá de sus dimensiones
+                y determinaciones, los colores cumplen un rol muy importante.</p>       
+
+        </div>
+
+        <div class="row justify-content-center sobreBP1">
+
+            <div class="col-xs col-sm col-md-8 col-lg-6 col-xl-6">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="media/paleta1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/paleta2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/paleta3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/paleta4.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/paleta5.jpg" alt="Third slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--fin de pagina encargos-->
+
+<!--inicio footer-->
+<div class="container-fluid">
+    <div class="row">
+    <footer class="footer">
+
+        <div class="footer__column">
+            <ul class="footer__column__list">
+                <li class="footer__column__item"><a href="envios.html"><img src="media/truck.png" alt="envios"><p class="footer__column__list footer__column__list--oculto">Envíos</p></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__column">
+            <ul class="footer__column__list">
+                <li class="footer__column__item"><a href="mediosdepago.html"><img src="media/credit-card.png" alt="pagos"><p class="footer__column__list footer__column__list--oculto">Medios de Pago</p></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__column">
+            <ul class="footer__column__list">
+                <li class="footer__column__item"><a href="faqs.html"><img src="media/help-circle.png" alt="faqs"><p class="footer__column__list footer__column__list--oculto">Preguntas frecuentes</p></a></li>
+            </ul>
+        </div>
+
+        <div class="footer__column">
+            <ul class="footer__column__list">
+                <li class="footer__column__item"><a href="mapa.html"><img src="media/lup.png" alt="map"><p class="footer__column__list footer__column__list--oculto">Navegación</p></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    </div>
+</div>
+<!--fin footer-->
+
+<script src="../repositorio/js/encargos.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
+
+</body>
+
+</html>

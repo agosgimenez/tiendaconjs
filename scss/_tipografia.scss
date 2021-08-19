@@ -1,0 +1,376 @@
+
+/*FUENTES , TAMAÑO, COLORES DE TIPOGRAFIA*/
+
+/*variables*/
+
+$letraMedia: 16px;
+
+$letraXl: 18px;
+
+$letraXxl: 24px;
+
+$letraSpace: 5px; 
+
+$espacio10: 10px;
+
+$espacio20: 20px;
+
+$espacio30: 30px;
+
+$espacio40: 40px;
+
+$verdeOscuro: #79A4A4;
+    
+$grisOscuro: #40454f;
+
+$grisMedio: #A6A6A6;
+
+$grisClaro: #d1d4dc;
+    
+$blanco: #f3f4f6;
+    
+$verdeAqua: #C2D6D6;
+ 
+$coral:coral;
+
+$magenta: magenta;
+
+$verdePetroleo: teal;
+
+
+/*BODY*/
+
+body {
+    font-size: 14px; 
+    font-style: normal; 
+    font-family: 'Poppins', Tahoma, Arial, sans-serif;
+    text-align: center;
+    color: $grisOscuro;
+}
+
+@media only screen and (min-width:768px) {
+
+    body {
+        font-size: $letraMedia; 
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    body {
+        font-size: $letraXl;
+    }
+
+}
+
+/*TITULOS*/
+
+h1 {
+    letter-spacing: 5px;
+    font-size: $letraXxl;
+    color: $grisOscuro;
+    text-shadow: $verdeAqua 3px 3px;
+    padding-bottom: $espacio20;
+}
+
+@media only screen and (min-width:768px) {
+    
+    h1 {
+        letter-spacing: $espacio10;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    
+    h1 {
+        letter-spacing: $espacio10;
+        font-size: 70px;
+        padding-top: 25px;
+    }
+}
+
+
+h2 {
+    font-size: 20px;
+    color: $verdeOscuro;
+    text-shadow: 1px 1px $grisOscuro;
+    padding-bottom: $espacio20;
+}
+
+@media only screen and (min-width:768px) {
+
+    h2 {
+        font-size: $letraXxl; 
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    h2 {
+        font-size: 30px;
+        padding-top: 15px; 
+    }
+}
+
+
+h3 {
+    font-size: $letraXl; 
+    font-style:italic; 
+    font-weight: lighter; 
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: $coral;
+}
+
+@media only screen and (min-width:1000px) {
+
+    h3 {
+        font-size:$letraXxl; 
+    }
+}
+
+
+h4 {
+    font-size:$letraMedia; 
+    text-transform: uppercase;
+    color:$verdeOscuro;
+}
+
+@media only screen and (min-width:1000px) {
+
+    h4 {
+        font-size: $letraXl; 
+        text-transform: uppercase;
+        }
+    }
+
+/*em*/
+
+em {
+    font-weight: lighter;
+    font-style: italic;
+    color:$coral;
+    text-transform: uppercase;
+}
+
+/*enlaces*/
+
+a {
+    color:$blanco;  
+}
+            
+a:hover {
+         font-style:italic; 
+         text-decoration:none;
+         color: $coral;
+    }
+            
+.dropdown-item {
+                color: $grisOscuro;
+            }
+
+.dropdown-item:hover {
+                      color: $blanco;
+                      background-color: $coral;
+                }
+
+/*footer*/
+
+.footer {
+        font-size: 8px;
+        color:$verdeAqua; 
+        background-color:$grisOscuro;
+    }
+
+@media only screen and (min-width:1000px) {
+
+    .footer p {
+            font-size: 12px;
+        }
+    }
+
+/*tablas y formularios*/
+
+.table {
+        padding: $espacio30; 
+        word-spacing: $espacio10;
+        background-color:$verdeOscuro;
+    }
+
+table ol {
+        list-style-type: none;
+    }
+
+table ul {
+        list-style-type: none;
+}
+
+th {
+    letter-spacing: 5px;
+    background-color: $blanco;
+}
+
+td {
+    color:$blanco;
+}
+
+/*TIPOGRAFIAS ESPECIALES*/
+
+/*jumbotron*/ 
+
+.jumbotron {
+            padding-top: $espacio30;
+}
+
+.jumbotron__titulo {
+                    font-size: 30px;
+                }
+
+
+/*"handmade" en index*/
+
+#handMade {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            font-size: 30px;
+            text-shadow: 4px 4px $verdeOscuro;
+            border-bottom: $grisClaro solid $espacio10;
+            margin: $espacio30;
+        }
+
+@media only screen and (min-width:768px) {
+
+    #handMade {  
+                letter-spacing: 50px;
+                font-size: 60px;
+                margin-left: $espacio30;
+                margin-right: $espacio30;
+            }
+    }
+
+@media only screen and (min-width:1000px) {
+
+    #handMade {  
+                letter-spacing: 60px;
+                font-size: 100px;
+                margin-left: $espacio30;
+                margin-right: $espacio30;
+            }   
+    }
+    
+/*FORMULARIOS*/
+
+.encargo__formulario { 
+        background-color:#79a4a4a9;
+        padding: $espacio10;
+        margin-bottom: 40px;
+        margin-top: $espacio20;
+      }
+
+.formulario__legend {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: $blanco;
+        font-size: 20px;
+}
+
+.formulario__detalles {
+          padding-top: $espacio30;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 8px;
+          color: $blanco;
+}
+
+.formulario__item {
+      padding: $espacio10;
+  }
+
+.form-control {
+  margin-bottom: $espacio20;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.encargo__formulario { 
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+.encargo__formulario {
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+}
+
+.form-control {
+                text-align: center;
+}
+
+/*botones*/
+
+.descuento {
+            background-color: $magenta !important;
+        }
+
+.cuotas {
+         background-color: $verdePetroleo !important;
+    }
+
+.botonesFormulario{
+                   margin-top: $espacio10;
+                   border: 0px;
+            }
+
+.botonesFormulario:hover {
+                            background-color: $magenta;
+            }
+
+.Alert1 {
+         background-color:$magenta !important;
+}
+
+.Alert2 {
+         background-color:$verdePetroleo !important;
+         color:$blanco;
+}
+
+.Alert3 {
+        background-color:$coral !important;
+}
+
+.botonAlert {
+            font-size: 12px;
+            border: 0px;
+            color:$blanco;
+            margin:$espacio30;
+            text-align: center;
+            -webkit-box-shadow: 8px 8px 8px 0px $grisMedio;
+            -moz-box-shadow: 8px 8px 8px 0px $grisMedio;
+            box-shadow: 8px 8px 8px 0px $grisMedio;
+    }   
+
+@media only screen and (min-width:768px) {
+
+.botonAlert {
+            font-size: 14px;
+            margin-right:150px;
+    }
+}
+        
+
+@media only screen and (min-width:1000px) {
+
+.botonAlert {
+            font-size: 14px;
+            margin-right:170px;
+    }
+}

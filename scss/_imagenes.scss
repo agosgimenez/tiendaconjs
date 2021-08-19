@@ -1,0 +1,284 @@
+/*IMAGENES*/
+
+.footer img {
+            width: 16px;
+        }
+
+.error {
+        width:20%;
+    }       
+
+/*FOTOCARDS*/
+
+.fotoCard {
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 100%;
+            min-width: 100px;
+            min-height: 250px;
+        }
+
+@media only screen and (min-width: 1000px) {
+
+            .fotoCard {
+                min-height: 250px;
+            }
+        }
+
+#cardTienda {
+            margin-left: 70px;
+            margin-right: 70px;
+            -webkit-box-shadow: 8px 8px 8px 4px $grisMedio;
+            -moz-box-shadow: 8px 8px 8px 4px $grisMedio;
+            box-shadow: 8px 8px 8px 4px $grisMedio;
+    }
+
+@media only screen and (min-width: 768px) {
+
+        #cardTienda {
+                     margin: 0px;
+                }
+    
+                
+    }
+    
+@media only screen and (min-width: 1000px) {
+    
+        #cardTienda {
+                    margin: 0px;
+                }
+    }   
+
+
+.fotoEnvio{
+            background-size: cover;
+            background-position:center;
+            width: 250px;
+            margin: 0px;
+        }
+
+@media only screen and (min-width:768px) {
+
+    .fotoEnvio{
+        background-size: cover;
+        background-position:center;
+        margin-top: 180px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .fotoEnvio{
+        background-size: cover;
+        background-position:center;
+        width: 350px;
+        margin-top: 50px;
+    }
+}
+
+.fotoProx {
+           max-width: 900px;
+           text-align:center;
+           min-width: 200px;
+        }
+        
+.fotoPagos {
+            background-size: cover;
+            background-position:center;
+            width: 300px;
+            height: 300px;
+            min-width: 100px;
+            min-height: 100px;
+        }
+
+
+/*BACK DE FOTOS*/
+
+.fotoDelTaller {
+                background-image: url("../media/sobrebp2.jpeg");
+                background-size: cover; 
+            }
+
+.fotoPaso1 {
+            background-image: url("../media/paso_1.jpg");
+            background-size: cover; 
+        }
+
+.fotoPaso2 {
+            background-image: url("../media/paso_2.jpg");
+            background-size: cover; 
+        }
+
+.fotoPaso3 {
+            background-image: url("../media/paso_3.jpg");
+            background-size: cover; 
+        }
+
+.fotoPaso4 {
+            background-image: url("../media/paso_4.jpg");
+            background-size: cover; 
+        }
+
+.fotoPaso5 {
+            background-image: url("../media/paso_5.jpg");
+            background-size: cover; 
+        }
+
+.fotoPaleta1 {
+            background-image: url("../media/paleta1.jpg");
+            background-size: contain; 
+        }
+
+.fotoPaleta2 {
+            background-image: url("../media/paleta2.jpg");
+            background-size: contain; 
+        }
+
+.fotoPaleta3 {
+            background-image: url("../media/paleta3.jpg");
+            background-size: contain; 
+        }
+
+.fotoPaleta4 {
+            background-image: url("../media/paleta4.jpg");
+            background-size: contain; 
+        }
+
+.fotoPaleta5 {
+            background-image: url("../media/paleta5.jpg");
+            background-size: contain; 
+        }
+
+.fotoCombos {
+            background-image: url("../media/combos.jpeg");
+            background-size: cover; 
+        }
+
+.fotoTazas{
+            background-image: url("../media/taza_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoTazas:hover {
+                  filter:grayscale(100%);
+        }
+
+.fotoVasos {
+            background-image: url("../media/vasos_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoVasos:hover {
+                  filter:grayscale(100%);
+            }
+
+.fotoSets {
+            background-image: url("../media/set_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoSets:hover {
+                 filter:grayscale(100%);
+            }
+
+
+.fotoMates {
+            background-image: url("../media/mate_index.jpg");
+            background-size: cover; 
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoMates:hover {
+                 filter:grayscale(100%);
+            }
+
+.fotoBowls {
+            background-image: url("../media/bowls_index.jpg");
+            background-size: cover; 
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoBowls:hover {
+                 filter:grayscale(100%);
+            }
+
+    
+.fotoBandejas {
+            background-image: url("../media/tabla_index.jpeg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoBandejas:hover {
+                 filter:grayscale(100%);
+            }
+ 
+.fotoPortaUtensillos {
+                    background-image: url("../media/portauten_index.jpg");
+                    background-size: cover;
+                    filter:grayscale(0%);
+                    transition: all 1s;
+                }
+        
+.fotoPortaUtensillos:hover {
+                         filter:grayscale(100%);
+                    }
+ 
+.fotoPlatos {
+            background-image: url("../media/platos_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoPlatos:hover {
+                 filter:grayscale(100%);
+            }
+
+.fotoObjetos{
+            background-image: url("../media/objetos_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoObjetos:hover {
+                 filter:grayscale(100%);
+            }
+
+.fotoMacetas {
+            background-image: url("../media/macetas_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoMacetas:hover {
+                 filter:grayscale(100%);
+            }
+
+.fotoFloreros {
+            background-image: url("../media/floreros_index.jpg");
+            background-size: cover;
+            filter:grayscale(0%);
+            transition: all 1s;
+        }
+
+.fotoFloreros:hover {
+                 filter:grayscale(100%);
+            }
+
+
+
+

@@ -1,0 +1,190 @@
+
+/*variables*/
+
+$espacio10: 10px;
+
+$espacio20: 20px;
+
+$espacio30: 30px;
+
+$espacio40: 40px;
+
+$coral:coral;
+
+$magenta: magenta;
+
+$verdePetroleo: teal;
+
+
+/*GRID GALERIA DE INDEX*/
+
+.gridGallery {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto auto auto auto auto auto auto;
+              gap: $espacio10 $espacio10;
+              grid-template-areas:
+                "gridTazas gridVasos"
+                "gridMates gridBowls"
+                "gridSets gridSets"
+                "gridPlatos gridPlatos"
+                "gridBandejas gridPortaUtensillos"
+                "gridObjetos gridObjetos"
+                "gridMacetas gridFloreros";
+              justify-content:center;
+              justify-items: stretch;
+              align-items: stretch;
+              margin:$espacio10;
+            }
+
+.gridGallery__gridTazas { grid-area: gridTazas; }
+.gridGallery__gridVasos { grid-area: gridVasos; }
+.gridGallery__gridSets { grid-area: gridSets; min-height: 200px; }
+.gridGallery__gridMates { grid-area: gridMates; }
+.gridGallery__gridBowls { grid-area: gridBowls; }
+.gridGallery__gridBandejas { grid-area: gridBandejas; }
+.gridGallery__gridPortaUtensillos { grid-area: gridPortaUtensillos; }
+.gridGallery__gridPlatos { grid-area: gridPlatos; min-height: 200px; }
+.gridGallery__gridObjetos { grid-area: gridObjetos; }
+.gridGallery__gridMacetas { grid-area: gridMacetas; }
+.gridGallery__gridFloreros { grid-area: gridFloreros; }
+
+.gridGallery__descrip {
+                        position: relative;
+                        top: 45%;
+                        text-align: center;
+                        font-size: 25px;
+                        color: $blanco;
+                        text-shadow: 2px 2px $grisOscuro;
+                    }
+
+@media only screen and (min-width:768px) {
+
+  .gridGallery__descrip {
+                          font-size: 40px;
+                      }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+.gridGallery {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              gap: $espacio10 $espacio10;
+              grid-template-areas:
+                "gridTazas gridVasos gridSets gridSets"
+                "gridMates gridBowls gridSets gridSets"
+                "gridPlatos gridPlatos gridBandejas gridBandejas"
+                "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
+                "gridObjetos gridObjetos gridMacetas gridFloreros";
+}
+
+.gridGallery__gridTazas { grid-area: gridTazas; }
+.gridGallery__gridVasos { grid-area: gridVasos; }
+.gridGallery__gridMates { grid-area: gridMates; }
+.gridGallery__gridSets { grid-area: gridSets; }
+.gridGallery__gridBowls { grid-area: gridBowls; }
+.gridGallery__gridPlatos { grid-area: gridPlatos; }
+.gridGallery__gridBandejas { grid-area: gridBandejas; }
+.gridGallery__gridPortaUtensillos { grid-area: gridPortaUtensillos; }
+.gridGallery__gridMacetas { grid-area: gridMacetas; }
+.gridGallery__gridObjetos { grid-area: gridObjetos; }
+.gridGallery__gridFloreros { grid-area: gridFloreros; }
+
+.gridGallery__descrip {
+                      top: 40%;
+                      font-size: 50px;
+                    }
+}
+
+
+/*GRID CONTACTO*/
+
+.gridContacto {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
+                gap: $espacio20 $espacio20;
+                grid-template-areas:
+                  "contactoForm contactoForm"
+                  "contactoMap contactoMap"
+                  "contactoWeb contactoWeb"
+                  "contactoRedes contactoRedes";
+                justify-content: center;
+                align-content: center;
+                margin:$espacio10;
+              }
+
+.contactoForm { 
+              grid-area: contactoForm; 
+              background-color:#79a4a4a9;
+              padding: $espacio10; 
+            }
+
+.contactoMap { 
+            grid-area: contactoMap; 
+            margin-left: $espacio20; 
+            margin-right:$espacio20; 
+          }
+          
+.contactoWeb { grid-area: contactoWeb; }
+
+.contactoRedes { grid-area: contactoRedes; }
+
+.contacto__visitRedes {
+                      color:coral;
+                      font-size:20px;
+                      padding-top:$espacio10;
+                      margin:5px;
+                      font-style: oblique;
+                      text-transform: uppercase;
+                    }
+
+.contacto__iconosRedes img {
+                          width: 70px;
+                          text-align: center; 
+                          display:inline;
+                          padding:$espacio10;
+                          margin-bottom: $espacio20;
+                          transition: 1s;
+                        }
+
+.contacto__iconosRedes img:hover {
+                                transform:scale(1.5,1.5);
+                              }
+
+.contacto__pregunta {
+                    line-height: 38px;
+                    margin-top:$espacio20;
+                  }
+
+.contacto__iframe {
+                  margin-top:$espacio20;
+                  width:100%;
+                  min-height:200px;
+                }
+
+@media only screen and (min-width:768px) {
+ 
+  .contacto__iframe {
+                    margin-top:$espacio20;
+                    width:600px;
+                    min-height:300px;
+                  }
+}  
+
+  @media only screen and (min-width: 1000px) {
+
+    .contactoForm {
+                  margin-left: 200px;
+                  margin-right: 200px;
+                }
+
+    .contacto__iframe {
+                      margin-top:$espacio20;
+                      width:900px;
+                      min-height:300px;
+                    }
+  }

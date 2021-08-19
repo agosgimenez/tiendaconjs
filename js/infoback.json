@@ -1,0 +1,93 @@
+
+[
+    {
+        "tipo": "tazas",
+        "precio": "750",
+        "id": "1",
+        "imgProducto": "taza_azul.jpg"
+    },
+    {
+        "tipo": "vasos",
+        "precio": "650",
+        "id": "2",
+        "imgProducto": "vaso_pastel.jpg"
+    },
+    {
+        "tipo": "mates",
+        "precio": "750",
+        "id": "3",
+        "imgProducto": "mate_index.jpg"
+    },
+    {
+        "tipo": "bowls",
+        "precio": "850",
+        "id": "4",
+        "imgProducto": "bowl_pastel.jpg"
+    },
+    {
+        "tipo": "bandejas",
+        "precio": "1200",
+        "id": "5",
+        "imgProducto": "tabla_azul.jpeg"
+    },
+    {
+        "tipo": "platos",
+        "precio": "850",
+        "id": "6",
+        "imgProducto": "plato_pastel.jpeg"
+    },
+    {
+        "tipo": "set mesa de 4",
+        "precio": "5200",
+        "id": "7",
+        "imgProducto": "set_index.jpg"
+    },
+    {
+        "tipo": "set mesa de 6",
+        "precio": "6000",
+        "id": "8",
+        "imgProducto": "set_pastel.jpeg"
+    },
+    {
+        "tipo": "set merienda para 4",
+        "precio": "6500",
+        "id": "9",
+        "imgProducto": "set_index.jpg"
+    },
+    {
+        "tipo": "set merienda para 6",
+        "precio": "6800",
+        "id": "10",
+        "imgProducto": "set_pastel.jpeg"
+    },
+    {
+        "tipo": "set bowls fan",
+        "precio": "3600",
+        "id": "11",
+        "imgProducto": "bowl_azul.jpg"
+    },
+    {
+        "tipo": "set bowls súper fan",
+        "precio": "4800",
+        "id": "12",
+        "imgProducto": "bowls_index.jpg"
+    },
+    {
+        "tipo": "porta utensillos",
+        "precio": "1000",
+        "id": "13",
+        "imgProducto": "portauten_index.jpg"
+    },
+    {
+        "tipo": "macetas",
+        "precio": "950",
+        "id": "14",
+        "imgProducto": "macetas_index.jpg"
+    },
+    {
+        "tipo": "ceniceros",
+        "precio": "950",
+        "id": "15",
+        "imgProducto": "cenicero_pastel.jpeg"
+    }  
+]

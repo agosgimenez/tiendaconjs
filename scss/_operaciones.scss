@@ -1,0 +1,233 @@
+
+/*OPERACIONES PARA PAGINAS DE VAJILLA, DECO Y PRODUCTOS*/
+
+/*VARIABLES*/
+
+$espacio10: 10px;
+
+$espacio20: 20px;
+
+$espacio30: 30px;
+
+$espacio40: 40px;
+
+$verdeOscuro: #79A4A4;
+    
+$grisOscuro: #40454f;
+
+$grisMedio: #A6A6A6;
+
+$grisClaro: #d1d4dc;
+    
+$blanco: #f3f4f6;
+    
+$verdeAqua: #c2d6d6c5;
+ 
+$coral:coral;
+
+$magenta: magenta;
+
+$verdePetroleo: teal;
+
+
+/*OPERACIONES SIMPLES*/
+
+/*CONDICIONALES PARA DESCUENTOS E INGRESOS DE PRODUCTOS*/
+
+$liquidacion: true;
+$porcentaje: 20;
+
+.off {
+    @if $liquidacion == false {
+        display:none;
+    } @else {
+        display:flex;
+    }
+}
+
+.off {
+    @if $porcentaje == 20 {
+        background-color:$coral;
+    }
+    @else if $porcentaje <= 20 {
+        background-color:mediumturquoise;
+    }
+    @else if $porcentaje >= 20 {
+        background-color:magenta;
+    }
+}
+
+.off {
+    flex-direction:inline-block;
+    float:right;
+    justify-content:center;
+    width:80px;
+    color:$blanco;
+    font-weight: lighter;
+    font-size:14px;
+}
+
+.off:hover {
+            color:$blanco;
+        }
+
+
+$ingreso: true;
+
+.nuevo { 
+    @if $liquidacion == false {
+        display:none;
+    } @else {
+        display:flex;
+    }
+}
+
+.nuevo {
+    flex-direction:inline-block;
+    float:right;
+    justify-content:center;
+    width:80px;
+    color:$blanco;
+    background-color:teal;
+    font-weight:lighter;
+    font-size: 16px;
+}
+
+
+/*MIXINS PARA LAS CARDS*/
+
+@mixin margenes1 {
+                margin: $espacio10 5px $espacio10 5px;
+            }
+
+@mixin margenesCostados {
+                        margin-left:$espacio40;
+                        margin-right: $espacio40;
+                    }
+
+@mixin fondoOscuro {
+                    background-color: $verdeOscuro;
+                    color:$blanco;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+
+@mixin fondoClaro {
+                    background-color: $blanco;
+                    color:$grisOscuro;
+                    font-size: 20px;
+                    text-shadow: $grisMedio;
+                    text-align:center;
+                    padding-top: $espacio10;
+                }
+
+.card-body {
+            @include fondoOscuro;
+            padding-top: $espacio10;
+          }
+
+.card-body--producto {
+                        @include fondoClaro;
+                }
+
+.card {
+        @include margenes1;
+    }
+
+.card-header {
+              @include fondoClaro;
+              font-size: 18px;
+            }
+
+@media only screen and (min-width:768px) {
+
+    .card-header {
+        font-size: 25px;
+      }
+}
+
+.card-title { 
+            @include fondoOscuro;
+            padding: 5px;
+        }
+
+@media only screen and (min-width:768px) {
+
+    .card-title { 
+                 font-size: 18px;
+            }
+
+}
+
+.card-text {
+            font-size: 14px;
+            margin: 0px;
+}
+
+@media only screen and (min-width:768px) {
+
+    .card-text {
+                font-size: 16px;
+      }
+}
+
+.btn {
+        @extend .card;
+    }
+
+.disenos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+
+/*EACH PRODUCTOS*/
+
+@each $disenos in geometria, calado, puntillismo, franjas, gotas, flora {
+    .#{$disenos}-card-body {
+        background-image:url('../media/#{$disenos}.jpg');
+        background-size:cover;
+        background-position: center;
+        min-height:250px;
+    }
+}
+
+/*FOR PRODUCTOS*/
+
+@for $boton-size from 1 through 3 {
+    .btn--#{$boton-size} {font-size:8px *$boton-size}
+}
+
+/*MAPS BOTONES*/
+
+$botones: (
+    info: $grisOscuro,
+    especial:$coral,
+    consulta:$grisMedio,
+    comprar: $verdePetroleo,
+);
+
+$botonmargin: (
+    pequeno: 10px,
+    chico: 16px,
+    medio: 20px,
+    xl: 25px,
+    xxl: 40px,
+);
+
+@each $boton, $color in $botones {
+    .boton--#{$boton} {
+        background-color: $color;
+        color: $blanco;
+    }
+}
+
+@each $boton, $margin in $botonmargin {
+    .botonmargin--#{$boton} {
+        margin: $margin;
+    }
+}
+
+
+

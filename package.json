@@ -1,0 +1,26 @@
+{
+  "name": "repositorio_blanco_piedra",
+  "version": "1.0.0",
+  "description": "sitio web empleado para dar a conocer trabajo en cerámica artesanal y que a futuro sirva como e-commerce",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/pruebascss.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agosgimenez/repositorioblancopiedra.git"
+  },
+  "author": "agostina gimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agosgimenez/repositorioblancopiedra/issues"
+  },
+  "homepage": "https://github.com/agosgimenez/repositorioblancopiedra#readme"
+}

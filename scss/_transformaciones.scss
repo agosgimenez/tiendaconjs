@@ -1,0 +1,40 @@
+/*TRANSFORMACIONES*/
+
+.logo:hover {
+            transform: scale(1.1,1.1);
+        }
+
+.footer__column__list:hover {
+                            transform:scale(1.1,1.1);
+                            color:coral;
+                        }
+
+.contacto__iconosRedes img:hover {
+                                transform:scale(1.5,1.5);
+                            }
+
+.aside img:hover {
+                transform:scale(1.5,1.5);
+            }
+
+.inputs {
+        transform:scale(1.2,1);
+    }
+
+.inputs:hover {
+                transform:rotatex(10deg);
+                color:coral;
+                font-weight: bold;
+            }
+
+
+.fotoindex {
+            filter:grayscale(0%);
+            transition: filter 1s;
+        }  
+
+.fotoindex:hover {
+                    filter:grayscale(100%)
+            }
+
+            
